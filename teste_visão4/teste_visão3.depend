@@ -1,0 +1,293 @@
+# depslib dependency file v1.0
+1390829224 source:/home/fei/Documentos/teste_visão3/DXL_SDK_LINUX_v1_01/src/dxl_hal.c
+	<stdio.h>
+	<stdio.h>
+	<string.h>
+	<unistd.h>
+	<fcntl.h>
+	<termios.h>
+	<linux/serial.h>
+	<sys/ioctl.h>
+	<sys/time.h>
+	"dxl_hal.h"
+
+1265977698 /home/fei/Documentos/teste_visão3/DXL_SDK_LINUX_v1_01/src/dxl_hal.h
+
+1392214000 source:/home/fei/Documentos/teste_visão3/DXL_SDK_LINUX_v1_01/src/dynamixel.c
+	"dxl_hal.h"
+	"dynamixel.h"
+
+1390833742 /home/fei/Documentos/teste_visão3/DXL_SDK_LINUX_v1_01/include/dynamixel.h
+
+1392219064 source:/home/fei/Documentos/teste_visão3/main.cpp
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<cvaux.h>
+	<highgui.h>
+	<cxcore.h>
+	<time.h>
+	<assert.h>
+	<float.h>
+	<limits.h>
+	<math.h>
+	<ctype.h>
+	<iostream>
+	<string>
+	<dynamixel.h>
+
+1343256930 /usr/local/include/opencv/cvaux.h
+	"opencv2/core/core_c.h"
+	"opencv2/core/core.hpp"
+	"opencv2/imgproc/imgproc_c.h"
+	"opencv2/imgproc/imgproc.hpp"
+	"opencv2/video/tracking.hpp"
+	"opencv2/video/background_segm.hpp"
+	"opencv2/features2d/features2d.hpp"
+	"opencv2/calib3d/calib3d.hpp"
+	"opencv2/objdetect/objdetect.hpp"
+	"opencv2/legacy/legacy.hpp"
+	"opencv2/legacy/compat.hpp"
+	"opencv2/legacy/blobtrack.hpp"
+	"opencv2/contrib/contrib.hpp"
+
+1343256930 /usr/local/include/opencv/highgui.h
+	"opencv2/core/core_c.h"
+	"opencv2/core/core.hpp"
+	"opencv2/highgui/highgui_c.h"
+	"opencv2/highgui/highgui.hpp"
+
+1350514538 /usr/local/include/opencv/cxcore.h
+	"opencv2/core/core_c.h"
+	"opencv2/core/core.hpp"
+
+1390829224 source:/home/fei/Documentos/teste_visão4/DXL_SDK_LINUX_v1_01/src/dxl_hal.c
+	<stdio.h>
+	<stdio.h>
+	<string.h>
+	<unistd.h>
+	<fcntl.h>
+	<termios.h>
+	<linux/serial.h>
+	<sys/ioctl.h>
+	<sys/time.h>
+	"dxl_hal.h"
+
+1265977698 /home/fei/Documentos/teste_visão4/DXL_SDK_LINUX_v1_01/src/dxl_hal.h
+
+1392214000 source:/home/fei/Documentos/teste_visão4/DXL_SDK_LINUX_v1_01/src/dynamixel.c
+	"dxl_hal.h"
+	"dynamixel.h"
+
+1390833742 /home/fei/Documentos/teste_visão4/DXL_SDK_LINUX_v1_01/include/dynamixel.h
+
+1393265020 source:/home/fei/Documentos/teste_visão4/main.cpp
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<cvaux.h>
+	<highgui.h>
+	<cxcore.h>
+	<time.h>
+	<assert.h>
+	<float.h>
+	<limits.h>
+	<math.h>
+	<ctype.h>
+	<iostream>
+	<string>
+	<dynamixel.h>
+
+1330730841 /usr/lib/openmpi/include/mpi.h
+	<stddef.h>
+	"mpi_portable_platform.h"
+	"openmpi/ompi/mpi/cxx/mpicxx.h"
+
+1330730841 /usr/lib/openmpi/include/mpi_portable_platform.h
+	"omp.h"
+	"omp.h"
+
+1330730844 /usr/lib/openmpi/include/openmpi/ompi/mpi/cxx/mpicxx.h
+	"mpi.h"
+	<map>
+	<utility>
+	<stdarg.h>
+	<stdio.h>
+	<iostream>
+	<sys/synch.h>
+	"ompi/mpi/cxx/pmpicxx.h"
+	"ompi/mpi/cxx/constants.h"
+	"ompi/mpi/cxx/functions.h"
+	"ompi/mpi/cxx/datatype.h"
+	"openmpi/ompi/mpi/cxx/constants.h"
+	"openmpi/ompi/mpi/cxx/functions.h"
+	"openmpi/ompi/mpi/cxx/datatype.h"
+	"ompi/mpi/cxx/exception.h"
+	"ompi/mpi/cxx/op.h"
+	"ompi/mpi/cxx/status.h"
+	"ompi/mpi/cxx/request.h"
+	"ompi/mpi/cxx/group.h"
+	"ompi/mpi/cxx/comm.h"
+	"ompi/mpi/cxx/win.h"
+	"ompi/mpi/cxx/file.h"
+	"ompi/mpi/cxx/errhandler.h"
+	"ompi/mpi/cxx/intracomm.h"
+	"ompi/mpi/cxx/topology.h"
+	"ompi/mpi/cxx/intercomm.h"
+	"ompi/mpi/cxx/info.h"
+	"openmpi/ompi/mpi/cxx/exception.h"
+	"openmpi/ompi/mpi/cxx/op.h"
+	"openmpi/ompi/mpi/cxx/status.h"
+	"openmpi/ompi/mpi/cxx/request.h"
+	"openmpi/ompi/mpi/cxx/group.h"
+	"openmpi/ompi/mpi/cxx/comm.h"
+	"openmpi/ompi/mpi/cxx/win.h"
+	"openmpi/ompi/mpi/cxx/file.h"
+	"openmpi/ompi/mpi/cxx/errhandler.h"
+	"openmpi/ompi/mpi/cxx/intracomm.h"
+	"openmpi/ompi/mpi/cxx/topology.h"
+	"openmpi/ompi/mpi/cxx/intercomm.h"
+	"openmpi/ompi/mpi/cxx/info.h"
+	"ompi/mpi/cxx/pop_inln.h"
+	"ompi/mpi/cxx/pgroup_inln.h"
+	"ompi/mpi/cxx/pstatus_inln.h"
+	"ompi/mpi/cxx/prequest_inln.h"
+	"ompi/mpi/cxx/datatype_inln.h"
+	"ompi/mpi/cxx/functions_inln.h"
+	"ompi/mpi/cxx/request_inln.h"
+	"ompi/mpi/cxx/comm_inln.h"
+	"ompi/mpi/cxx/intracomm_inln.h"
+	"ompi/mpi/cxx/topology_inln.h"
+	"ompi/mpi/cxx/intercomm_inln.h"
+	"ompi/mpi/cxx/group_inln.h"
+	"ompi/mpi/cxx/op_inln.h"
+	"ompi/mpi/cxx/errhandler_inln.h"
+	"ompi/mpi/cxx/status_inln.h"
+	"ompi/mpi/cxx/info_inln.h"
+	"ompi/mpi/cxx/win_inln.h"
+	"ompi/mpi/cxx/file_inln.h"
+	"openmpi/ompi/mpi/cxx/datatype_inln.h"
+	"openmpi/ompi/mpi/cxx/functions_inln.h"
+	"openmpi/ompi/mpi/cxx/request_inln.h"
+	"openmpi/ompi/mpi/cxx/comm_inln.h"
+	"openmpi/ompi/mpi/cxx/intracomm_inln.h"
+	"openmpi/ompi/mpi/cxx/topology_inln.h"
+	"openmpi/ompi/mpi/cxx/intercomm_inln.h"
+	"openmpi/ompi/mpi/cxx/group_inln.h"
+	"openmpi/ompi/mpi/cxx/op_inln.h"
+	"openmpi/ompi/mpi/cxx/errhandler_inln.h"
+	"openmpi/ompi/mpi/cxx/status_inln.h"
+	"openmpi/ompi/mpi/cxx/info_inln.h"
+	"openmpi/ompi/mpi/cxx/win_inln.h"
+	"openmpi/ompi/mpi/cxx/file_inln.h"
+
+1330730844 /usr/lib/openmpi/include/openmpi/ompi/mpi/cxx/constants.h
+
+1330730844 /usr/lib/openmpi/include/openmpi/ompi/mpi/cxx/functions.h
+
+1330730844 /usr/lib/openmpi/include/openmpi/ompi/mpi/cxx/datatype.h
+
+1330730844 /usr/lib/openmpi/include/openmpi/ompi/mpi/cxx/exception.h
+
+1330730844 /usr/lib/openmpi/include/openmpi/ompi/mpi/cxx/op.h
+
+1330730844 /usr/lib/openmpi/include/openmpi/ompi/mpi/cxx/status.h
+
+1330730844 /usr/lib/openmpi/include/openmpi/ompi/mpi/cxx/request.h
+
+1330730844 /usr/lib/openmpi/include/openmpi/ompi/mpi/cxx/group.h
+
+1330730844 /usr/lib/openmpi/include/openmpi/ompi/mpi/cxx/comm.h
+
+1330730844 /usr/lib/openmpi/include/openmpi/ompi/mpi/cxx/win.h
+
+1330730844 /usr/lib/openmpi/include/openmpi/ompi/mpi/cxx/file.h
+
+1330730844 /usr/lib/openmpi/include/openmpi/ompi/mpi/cxx/errhandler.h
+
+1330730844 /usr/lib/openmpi/include/openmpi/ompi/mpi/cxx/intracomm.h
+
+1330730844 /usr/lib/openmpi/include/openmpi/ompi/mpi/cxx/topology.h
+
+1330730844 /usr/lib/openmpi/include/openmpi/ompi/mpi/cxx/intercomm.h
+
+1330730844 /usr/lib/openmpi/include/openmpi/ompi/mpi/cxx/info.h
+
+1330730844 /usr/lib/openmpi/include/openmpi/ompi/mpi/cxx/datatype_inln.h
+
+1330730844 /usr/lib/openmpi/include/openmpi/ompi/mpi/cxx/functions_inln.h
+	<string.h>
+
+1330730844 /usr/lib/openmpi/include/openmpi/ompi/mpi/cxx/request_inln.h
+
+1330730844 /usr/lib/openmpi/include/openmpi/ompi/mpi/cxx/comm_inln.h
+
+1330730844 /usr/lib/openmpi/include/openmpi/ompi/mpi/cxx/intracomm_inln.h
+
+1330730844 /usr/lib/openmpi/include/openmpi/ompi/mpi/cxx/topology_inln.h
+
+1330730844 /usr/lib/openmpi/include/openmpi/ompi/mpi/cxx/intercomm_inln.h
+
+1330730844 /usr/lib/openmpi/include/openmpi/ompi/mpi/cxx/group_inln.h
+
+1330730844 /usr/lib/openmpi/include/openmpi/ompi/mpi/cxx/op_inln.h
+
+1330730844 /usr/lib/openmpi/include/openmpi/ompi/mpi/cxx/errhandler_inln.h
+
+1330730844 /usr/lib/openmpi/include/openmpi/ompi/mpi/cxx/status_inln.h
+
+1330730844 /usr/lib/openmpi/include/openmpi/ompi/mpi/cxx/info_inln.h
+
+1330730844 /usr/lib/openmpi/include/openmpi/ompi/mpi/cxx/win_inln.h
+
+1330730844 /usr/lib/openmpi/include/openmpi/ompi/mpi/cxx/file_inln.h
+
+1393455032 source:/home/fei/Documentos/Milton shared Memory/teste_visão4/main.cpp
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<cvaux.h>
+	<highgui.h>
+	<cxcore.h>
+	<time.h>
+	<assert.h>
+	<float.h>
+	<limits.h>
+	<math.h>
+	<ctype.h>
+	<iostream>
+	<string>
+	<dynamixel.h>
+	<errno.h>
+	<unistd.h>
+	<sys/types.h>
+	<sys/ipc.h>
+	<sys/shm.h>
+
+1393263108 /home/fei/Documentos/Milton shared Memory/DXL_SDK_LINUX_v1_01/include/dynamixel.h
+
+1393441615 /home/fei/Documentos/Milton shared Memory/milton_cod 24-02-2014/DXL_SDK_LINUX_v1_01/include/dynamixel.h
+
+1393453834 source:/home/fei/Documentos/Milton shared Memory/milton_cod 24-02-2014/DXL_SDK_LINUX_v1_01/src/dxl_hal.c
+	<stdio.h>
+	<stdio.h>
+	<string.h>
+	<unistd.h>
+	<fcntl.h>
+	<termios.h>
+	<linux/serial.h>
+	<sys/ioctl.h>
+	<sys/time.h>
+	"dxl_hal.h"
+
+1393442580 source:/home/fei/Documentos/Milton shared Memory/milton_cod 24-02-2014/DXL_SDK_LINUX_v1_01/src/dynamixel.c
+	"dxl_hal.h"
+	"dynamixel.h"
+
+1265977698 /home/fei/Documentos/Milton shared Memory/milton_cod 24-02-2014/DXL_SDK_LINUX_v1_01/src/dxl_hal.h
+
+1393263173 source:/home/fei/Documentos/Milton shared Memory/teste_visão4/distancia_bola.cpp
+	<dynamixel.h>
+	<math.h>
+	<stdio.h>
+

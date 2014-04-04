@@ -1,0 +1,101 @@
+//##########################################################
+//##                                                      ##
+//##       DARwIn-OP Clone Right Leg Test                 ##
+//##                                           2012.09.04 ##
+//##                                                      ##
+//## author: llongeri                                     ##
+//##                                                      ##
+//## based on Dymanixel SDK ReadWrite example             ##
+//##                                                      ##
+//##########################################################
+#include <stdio.h>
+#include <termio.h>
+#include <unistd.h>
+#include <dynamixel.h>
+
+// Control table address
+#define P_GOAL_POSITION_L       (30)
+#define P_MOVING_SPEED_L        (32)
+#define P_PRESENT_POSITION_L    (36)
+#define P_MOVING                (46)
+#define P_GOAL_ACCELERATION     (73)
+
+
+#define DEFAULT_BAUDNUM         (1) // 1Mbps
+
+#define M_17_RIGHT_HEEL         (17)
+#define M_15_RIGHT_ANKLE        (15)
+#define M_13_RIGHT_KNEE         (13)
+#define M_11_RIGHT_HIP          (11)
+#define M_07_RIGHT_BUTTOCK      (9)
+#define M_07_RIGHT_WAIST        (7)
+
+#define MOTOR_COUNT             (6)
+
+int motor_id[MOTOR_COUNT] = {M_17_RIGHT_HEEL, M_15_RIGHT_ANKLE, M_13_RIGHT_KNEE, 
+                             M_11_RIGHT_HIP, M_07_RIGHT_BUTTOCK, M_07_RIGHT_WAIST};
+
+int motor_speed[MOTOR_COUNT] = {35, 35, 70, 35, 35, 35};
+
+int motor_acc[MOTOR_COUNT] = {2, 2, 4, 2, 2, 2};
+
+
+void PrintCommStatus(int CommStatus);
+void PrintErrorCode(void);
+
+int main()
+{
+    int baudnum = DEFAULT_BAUDNUM;
+    int deviceIndex = 0;
+
+    printf("\n\nDARwIn-OP Right Leg Test 1\n\n");
+
+    if(dxl_initialize(deviceIndex, baudnum) == 0)
+    {
+        printf("Failed to open USB adapter!\n");
+        return 0;
+    }
+    else
+        printf("Succeed to open USB adapter!\n");
+
+    int i;
+    for (i = 0; i < MOTOR_COUNT; i++) 
+    {
+        dxl_write_word(motor_id[i], P_MOVING_SPEED_L, motor_speed[i]);
+        dxl_write_byte(motor_id[i], P_GOAL_ACCELERATION, motor_acc[i]);
+    }
+
+    for (i = 0; i < MOTOR_COUNT; i++) 
+    {
+        dxl_write_word(motor_id[i], P_GOAL_POSITION_L, 2048);
+    }
+
+    while(1)
+    {
+        printf( "Press 'u' or 'd' and Enter to move (press ESC and Enter to quit)\n" );
+        int key = getchar(); 
+
+        if(key == 0x1b)
+            break;
+
+        if (key == 'u')
+        {
+            dxl_write_word(M_11_RIGHT_HIP, P_GOAL_POSITION_L, 2048);
+            dxl_write_word(M_13_RIGHT_KNEE, P_GOAL_POSITION_L, 2048);
+            dxl_write_word(M_15_RIGHT_ANKLE, P_GOAL_POSITION_L, 2048);
+        }
+
+        if (key == 'd')
+        {
+            dxl_write_word(M_11_RIGHT_HIP, P_GOAL_POSITION_L, 2048 - 512 - 128);      // -28.125 degrees turn
+            dxl_write_word(M_13_RIGHT_KNEE, P_GOAL_POSITION_L, 2048 + 1024 + 256);    // +56.25 degrees turn
+            dxl_write_word(M_15_RIGHT_ANKLE, P_GOAL_POSITION_L, 2048 + 512 + 128);    // +28.125 degrees turn
+        }
+    }
+
+    // Close device
+    dxl_terminate();
+    printf("Terminated.\n");
+    return 0;
+}
+

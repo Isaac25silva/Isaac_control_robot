@@ -1,0 +1,23 @@
+# depslib dependency file v1.0
+1393437593 source:/home/fei/Documentos/Decisao/main.cpp
+	<iostream>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<errno.h>
+	<unistd.h>
+	<sys/types.h>
+	<sys/ipc.h>
+	<sys/shm.h>
+
+1393538374 source:/home/fei/Documentos/Milton shared Memory/Decisao/main.cpp
+	<iostream>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<errno.h>
+	<unistd.h>
+	<sys/types.h>
+	<sys/ipc.h>
+	<sys/shm.h>
+

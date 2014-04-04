@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_layout_file>
+	<ActiveTarget name="Debug" />
+	<File name="../milton_cod 24-02-2014/DXL_SDK_LINUX_v1_01/src/dxl_hal.c" open="0" top="0" tabpos="0">
+		<Cursor position="315" topLine="5" />
+	</File>
+	<File name="../milton_cod 24-02-2014/DXL_SDK_LINUX_v1_01/src/dynamixel.c" open="0" top="0" tabpos="2">
+		<Cursor position="7235" topLine="290" />
+	</File>
+	<File name="distancia_bola.cpp" open="1" top="0" tabpos="2">
+		<Cursor position="0" topLine="0" />
+	</File>
+	<File name="main.cpp" open="1" top="1" tabpos="1">
+		<Cursor position="792" topLine="22" />
+	</File>
+</CodeBlocks_layout_file>
