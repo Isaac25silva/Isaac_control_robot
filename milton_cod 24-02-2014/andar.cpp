@@ -1,4 +1,4 @@
-//comentario 04-04-14
+//comentario 04-04-14 v2
 #include <dynamixel.h>
 
 #define VEL 200 // Define a velocidade
